@@ -11,12 +11,14 @@
  #head-text {
      color: white;
      align-items: flex-end;
+     margin-right: 5vmin;
  }
  
  #game-board {
      background-color: rgb(31, 111, 140);
      width: 100vmin;
      height: 100vmin;
+     margin-right: auto;
      display: grid;
      grid-template-rows: repeat(21, 1fr);
      grid-template-columns: repeat(21, 1fr);
