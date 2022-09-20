@@ -1,5 +1,6 @@
+import { SNAKE_SPEED } from './snake.js'
+
 let lastRenderTime = 0
-const SNAKE_SPEED = 2
 
 function main(currentTime) {
     window.requestAnimationFrame(main)
@@ -9,6 +10,18 @@ function main(currentTime) {
 
     console.log('Render')
     lastRenderTime = currentTime
+
+    update()
+    draw()
 }
 
 window.requestAnimationFrame(main)
+
+
+function update() {
+
+}
+
+function draw() {
+
+}
