@@ -6,37 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake/Worm Game</title>
-    <style>
-        body {
-            height: 100vh;
-            width: 100vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            background-color: black;
-        }
-        
-        #game-board {
-            background-color: rgb(31, 111, 140);
-            width: 100vmin;
-            height: 100vmin;
-            display: grid;
-            grid-template-rows: repeat(21, 1fr);
-            grid-template-columns: repeat(21, 1fr);
-        }
-        
-        .snake {
-            background-color: hsl(123, 56%, 62%);
-        }
-        
-        .food {
-            background-color: hsl(50, 100%, 50%);
-            border: .25vmin solid black;
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
+
+<header id="head-text">
+    <h2>USE THE ARROW KEYS TO START WORMIN</h2>
+    <h3>EAT THE YELLOW BLOCKS TO GROW</h3>
+</header>
 
 <body>
     <div id="game-board"></div>
