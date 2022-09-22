@@ -26,6 +26,7 @@
  
  .snake {
      background-color: hsl(123, 56%, 62%);
+     border: .20vmin solid black;
  }
  
  .food {
