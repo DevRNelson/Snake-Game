@@ -3,6 +3,7 @@ import { randomGridPosition } from './grid.js'
 
 let food = getRandomFoodPosition()
 const EXPANSION_RATE = 1
+    //the expansion_rate value determines how many blocks to add once food is eaten
 
 export function update() {
     if (onSnake(food)) {
@@ -10,6 +11,7 @@ export function update() {
         food = getRandomFoodPosition()
     }
 }
+// ^ updates the size of the snake upon eating food 
 
 export function draw(gameBoard) {
     const foodElement = document.createElement('div')

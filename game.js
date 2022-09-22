@@ -13,7 +13,7 @@ function main(currentTime) {
         }
         return
     }
-
+    //prompts the user to restart the game by refreshing the page when they lose
 
     window.requestAnimationFrame(main)
     const secondsSinceLastRender = (currentTime - lastRenderTime) / 1000
@@ -26,6 +26,7 @@ function main(currentTime) {
     draw()
 }
 
+
 window.requestAnimationFrame(main)
 
 function update() {
@@ -33,13 +34,17 @@ function update() {
     updateFood()
     checkDeath()
 }
+//keeps track of the snake, food and death status by updating the screen as needed
 
 function draw() {
     gameBoard.innerHTML = ''
     drawSnake(gameBoard)
     drawFood(gameBoard)
 }
+//adds food and snake into the grid
 
 function checkDeath() {
     gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
 }
+
+//determines if the player has left the grid or not to trigger a game over event

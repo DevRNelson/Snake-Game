@@ -15,6 +15,7 @@ export function update() {
     snakeBody[0].x += inputDirection.x
     snakeBody[0].y += inputDirection.y
 }
+// mantains a live visual feed of the snakes location on the screen
 
 export function draw(gameBoard) {
     snakeBody.forEach(segment => {
@@ -25,10 +26,13 @@ export function draw(gameBoard) {
         gameBoard.appendChild(snakeElement)
     })
 }
+//creates the grid/gameplay area
 
 export function expandSnake(amount) {
     newSegments += amount
 }
+
+/determines how much bigger to make the snake
 
 export function onSnake(position, { ignoreHead = false } = {}) {
     return snakeBody.some((segment, index) => {
