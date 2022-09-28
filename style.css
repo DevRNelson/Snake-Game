@@ -5,7 +5,7 @@
      justify-content: center;
      align-items: center;
      margin: 0;
-     background-color: rgb(42, 42, 42);
+     background-color: rgb(0, 0, 0);
  }
  
  #head-text {
@@ -22,14 +22,14 @@
      display: grid;
      grid-template-rows: repeat(21, 1fr);
      grid-template-columns: repeat(21, 1fr);
+     border: solid white 5px;
  }
  
  .snake {
      background-color: hsl(123, 56%, 62%);
-     border: .20vmin solid black;
  }
  
  .food {
      background-color: hsl(50, 100%, 50%);
-     border: .25vmin solid rgb(255, 255, 255);
+     border: 5px solid rgb(255, 143, 30);
  }

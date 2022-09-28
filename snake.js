@@ -4,6 +4,8 @@ export const SNAKE_SPEED = 5
 const snakeBody = [{ x: 11, y: 11 }]
 let newSegments = 0
 
+
+
 export function update() {
     addSegments()
 
@@ -32,7 +34,7 @@ export function expandSnake(amount) {
     newSegments += amount
 }
 
-/determines how much bigger to make the snake
+//determines how much bigger to make the snake
 
 export function onSnake(position, { ignoreHead = false } = {}) {
     return snakeBody.some((segment, index) => {
